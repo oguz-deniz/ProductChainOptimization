@@ -1,0 +1,10 @@
+/*********************************************
+ * OPL 12.6.2.0 Data
+ * Author: oguzd
+ * Creation Date: 04 May 2023 at 09:27:58
+ *********************************************/
+ SheetConnection sheet("OpsData.xlsx");
+ demand from SheetRead(sheet,"Orders!B2:B101");
+ capacity from SheetRead(sheet,"Machines!B2:B26");
+ profit from SheetRead(sheet,"Orders!B2:B101");
+ fixedCost from SheetRead(sheet,"Machines!C2:C26");
